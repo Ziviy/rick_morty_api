@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import getAllCharacters from '@/api/getAllCharacters'
 import Link from 'next/link'
 
 
@@ -11,8 +10,10 @@ export default async function Home() {
 
   return (
     <main>
-      <h1>Home page</h1>
+      <h1>Home Page</h1>
       <Link href='characters'>Characters</Link>
+      <br />
+      <Link href='episodes'>Episodes</Link>
     </main>
 
   )

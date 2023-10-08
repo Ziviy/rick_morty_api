@@ -1,3 +1,10 @@
+type Info = {
+    'count': number,
+    'pages': number,
+    'next': string,
+    'prev': string
+}
+
 type Character = {
     'id': number,
     'name': string,
@@ -6,7 +13,7 @@ type Character = {
     'type': string,
     'gender': string,
     'url': string,
-    'created': date
+    'created': Date
     'origin': {
         'name': string,
         'url': string
@@ -19,9 +26,12 @@ type Character = {
     'episode': string
 }
 
-type Info = {
-    'count': number,
-    'pages': number,
-    'next': string,
-    'prev': string
+type Episode = {
+    'id': number,
+    'name': string,
+    'air_date': Date,
+    'episode': string,
+    'characters': string,
+    'url': string,
+    'created': Date
 }

@@ -11,7 +11,7 @@ export default async function CharactersPage() {
 
   const charactersData = await getAllCharacters()
 
-  const users = await charactersData.results
+  const users = charactersData.results
 
   const content = (
     <section>
