@@ -8,12 +8,10 @@ export const metadata: Metadata = {
 }
 
 export default async function CharactersPage() {
-
   const charactersData = await getAllCharacters()
-
   const users = charactersData.results
 
-  const content = (
+  return (
     <section>
       <h2>
         <Link href='/'>Home</Link>
@@ -22,12 +20,10 @@ export default async function CharactersPage() {
       {users.map(user => {
         return (
           <>
-            <p key={user.id}>{user.name}</p>
+          <p key={user.id}>{user.name}</p>
           </>
-        )
+          )
       })}
     </section>
   )
-
-  return content
 }

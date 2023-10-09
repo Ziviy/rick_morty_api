@@ -1,3 +1,5 @@
+import getCharacter from "@/api/getCharacter";
+
 type Params = {
     params: {
         characterId: string
@@ -6,6 +8,6 @@ type Params = {
 
 export default function CharacterPage({ params: { characterId}}: Params) {
   return (
-    <div>CharacterPage</div>
+    
   )
 }

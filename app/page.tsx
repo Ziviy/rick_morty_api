@@ -7,13 +7,12 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-
   return (
     <main>
       <h1>Home Page</h1>
-      <Link href='characters'>Characters</Link>
+      <Link href="./characters">Characters</Link>
       <br />
-      <Link href='episodes'>Episodes</Link>
+      <Link href='./episodes'>Episodes</Link>
     </main>
 
   )
